@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyboardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PV6-JM-hxD">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kYR-O8-yUN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Lnc-mu-KhA"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5CE-CD-adt">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rKn-qm-ivy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ymb-Kd-dsF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-Qs-yFR">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1VD-ws-Pgy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bYK-aP-vsR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PfB-de-1AS">
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uX9-bY-RH8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oXH-xZ-yHU"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSU-l5-D5Y">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bTx-bz-8v1"/>
+                                </constraints>
+                                <state key="normal" title="ENVIAR DATOS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GSU-l5-D5Y" secondAttribute="trailing" id="2bd-l0-JDe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PfB-de-1AS" secondAttribute="trailing" id="7RG-6r-DeM"/>
+                            <constraint firstItem="0zd-Qs-yFR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IZT-gP-Wyf"/>
+                            <constraint firstItem="GSU-l5-D5Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KR3-rc-vCO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PV6-JM-hxD" secondAttribute="trailing" id="VJN-8b-dFV"/>
+                            <constraint firstItem="5CE-CD-adt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W2J-8T-IUS"/>
+                            <constraint firstItem="PV6-JM-hxD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="czN-ji-8zy"/>
+                            <constraint firstItem="PfB-de-1AS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jmg-01-Y9W"/>
+                            <constraint firstItem="PV6-JM-hxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k4E-YF-pUC"/>
+                            <constraint firstItem="5CE-CD-adt" firstAttribute="top" secondItem="PV6-JM-hxD" secondAttribute="bottom" constant="8" id="liB-oq-jhf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5CE-CD-adt" secondAttribute="trailing" id="qRV-nU-UgH"/>
+                            <constraint firstItem="0zd-Qs-yFR" firstAttribute="top" secondItem="5CE-CD-adt" secondAttribute="bottom" constant="8" id="rBs-hH-klp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GSU-l5-D5Y" secondAttribute="bottom" id="u3j-am-qOj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0zd-Qs-yFR" secondAttribute="trailing" id="v4K-Io-jag"/>
+                            <constraint firstItem="PfB-de-1AS" firstAttribute="top" secondItem="0zd-Qs-yFR" secondAttribute="bottom" constant="8" id="xEw-FN-3fR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Str-MC-Grn" appends="YES" id="bqq-Sn-5UK"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBottomConstraint" destination="u3j-am-qOj" id="Hdv-4j-WtL"/>
+                        <outlet property="emailTextField" destination="5CE-CD-adt" id="NJt-Hg-UMG"/>
+                        <outlet property="nameTextField" destination="PV6-JM-hxD" id="qSc-kF-PIP"/>
+                        <outlet property="passwordTextfield" destination="PfB-de-1AS" id="BJE-5b-MF1"/>
+                        <outlet property="phoneTextField" destination="0zd-Qs-yFR" id="t8n-oS-jBH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Str-MC-Grn">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="TIH-4H-Q1J"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
