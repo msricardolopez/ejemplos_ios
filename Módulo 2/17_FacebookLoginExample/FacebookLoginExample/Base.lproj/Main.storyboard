@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookLoginExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcB-gz-INd">
+                                <rect key="frame" x="87" y="318" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4Ir-CR-aN8"/>
+                                    <constraint firstAttribute="height" constant="30" id="IGL-2y-lG0"/>
+                                </constraints>
+                                <state key="normal" title="Login con Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookLogginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmp-RQ-Ygc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xcB-gz-INd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0wN-lX-EkU"/>
+                            <constraint firstItem="xcB-gz-INd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bvA-CA-jNI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="xcB-gz-INd" id="Xev-gh-7mr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="4vs-KE-eGa">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="j4u-Mx-Umb" customClass="SecondViewController" customModule="FacebookLoginExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8iQ-Ud-Ceo"/>
+                        <viewControllerLayoutGuide type="bottom" id="qFG-Rd-IKb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HaF-bb-vnl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-fa-KaE">
+                                <rect key="frame" x="129.5" y="318" width="116" height="30"/>
+                                <state key="normal" title="CERRAR SESIÓN"/>
+                                <connections>
+                                    <action selector="singOutButtonPressed:" destination="j4u-Mx-Umb" eventType="touchUpInside" id="tFE-3u-yY4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kcm-oG-2oU">
+                                <rect key="frame" x="137.5" y="30" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WG6-Mw-ACL"/>
+                                    <constraint firstAttribute="width" constant="100" id="cjj-OY-zbo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KU-ts-tXX">
+                                <rect key="frame" x="0.0" y="138" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="wUW-ca-PqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1KU-ts-tXX" firstAttribute="top" secondItem="Kcm-oG-2oU" secondAttribute="bottom" constant="8" id="4Ho-V9-Pzv"/>
+                            <constraint firstAttribute="trailing" secondItem="1KU-ts-tXX" secondAttribute="trailing" id="5l7-mv-Oxe"/>
+                            <constraint firstItem="1KU-ts-tXX" firstAttribute="leading" secondItem="HaF-bb-vnl" secondAttribute="leading" id="9Uo-d0-qzm"/>
+                            <constraint firstItem="1aD-fa-KaE" firstAttribute="centerX" secondItem="HaF-bb-vnl" secondAttribute="centerX" id="ZEf-Kh-jTZ"/>
+                            <constraint firstItem="Kcm-oG-2oU" firstAttribute="centerX" secondItem="HaF-bb-vnl" secondAttribute="centerX" id="czn-jA-Tf0"/>
+                            <constraint firstItem="Kcm-oG-2oU" firstAttribute="top" secondItem="8iQ-Ud-Ceo" secondAttribute="bottom" constant="10" id="iHA-61-r7r"/>
+                            <constraint firstItem="1aD-fa-KaE" firstAttribute="centerY" secondItem="HaF-bb-vnl" secondAttribute="centerY" id="qfi-NA-P0i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="1KU-ts-tXX" id="fHy-90-rMO"/>
+                        <outlet property="photoImageView" destination="Kcm-oG-2oU" id="uR6-gX-z2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xm-cU-gDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="38"/>
+        </scene>
+    </scenes>
+</document>
